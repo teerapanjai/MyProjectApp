@@ -18,6 +18,8 @@ const connection = new mysql.createConnection({
   database: "project-app",
 });
 
+// To Connect to Database use this command (ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';) on your mySQLWorkbench
+
 // Check Database connected
 connection.connect((err) => {
   if (err) {

@@ -1,1 +1,13 @@
-SELECT * FROM sakila.payment;
+CREATE SCHEMA `project-app`;
+USE `project-app`;
+
+CREATE TABLE `project-app`.`books` (
+  bookID VARCHAR(255) PRIMARY KEY NOT NULL ,
+  bookTitle VARCHAR(255) NOT NULL,
+  authorName VARCHAR(255) NOT NULL,
+  bookDescription VARCHAR(255) DEFAULT NULL,
+  imageURL VARCHAR(255) DEFAULT NULL,
+  category VARCHAR(255) NOT NULL,
+  bookPDFURL VARCHAR(255) DEFAULT NULL,
+  bookPrice VARCHAR(255) NOT NULL
+);

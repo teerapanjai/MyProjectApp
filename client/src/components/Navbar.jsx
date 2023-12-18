@@ -74,6 +74,7 @@ const Navbar = () => {
           <div className="space-x-12 hidden lg:flex items-center">
             <button>
               <FaBarsStaggered className="w-5 hover:text-blue-700" />
+              <FaBarsStaggered className="w-5 hover:text-blue-700 lg:hidden" />
             </button>
           </div>
 
